@@ -1,0 +1,32 @@
+input{
+    width:90%;
+    margin: 2%;
+    border-radius: 10px;
+    padding:5px;
+    border: 2px solid black;
+}
+form{
+    width:40%;
+    padding: 3px;
+    margin-left:250px;
+    background-color: cadetblue;
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+button{
+    background-color: beige;
+    border: 2px solid black;
+    border-radius: 15px;
+    color:black;
+    font-size: 15px;
+    padding:5px;
+    padding-left: 15px;
+    padding-right:15px;
+    margin:10px;
+    margin-left: 100px;
+}

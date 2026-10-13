@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.about-page {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+
+.about-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(3, 8, 18, 0.45);
+  z-index: 0;
+}
+
+
+.about-page .navbar {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  padding: 20px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(3, 10, 20, 0.72);
+  border-bottom: 1px solid rgba(105, 220, 255, 0.25);
+}
+
+.about-page .navbar h2 {
+  margin: 0;
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+}
+
+.about-page .navlinks {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.about-page .navlinks a {
+  color: #dce7ef;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.about-page .navlinks a:hover {
+  color: #69dcff;
+}
+
+
+
+.about-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1150px;
+  margin: auto;
+  padding: 75px 30px;
+}
+
+
+
+.about-hero {
+  max-width: 750px;
+  margin-bottom: 50px;
+}
+
+.about-eyebrow {
+  color: #69dcff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.about-hero h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 52px;
+  margin: 12px 0 5px;
+}
+
+.about-hero h2 {
+  color: #69dcff;
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+
+.about-tagline {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.about-intro {
+  color: #d1dce5;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 50px;
+}
+
+.about-card {
+  background: rgba(5, 15, 28, 0.78);
+  border: 1px solid rgba(105, 220, 255, 0.2);
+  border-radius: 14px;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  border-color: #69dcff;
+}
+
+.about-card span {
+  font-size: 30px;
+}
+
+.about-card h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 15px 0 8px;
+}
+
+.about-card p {
+  color: #b8c6d2;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+
+
+.about-section {
+  margin-bottom: 50px;
+}
+
+.about-section > h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 30px;
+  margin-bottom: 22px;
+}
+
+
+
+.about-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about-skills span {
+  background: rgba(5, 15, 28, 0.8);
+  border: 1px solid rgba(105, 220, 255, 0.25);
+  color: #d9f5ff;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+
+
+.about-journey {
+  background: rgba(5, 15, 28, 0.78);
+  border-left: 2px solid #69dcff;
+  padding: 10px 25px;
+}
+
+.journey-item {
+  display: flex;
+  gap: 25px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.journey-item:last-child {
+  border-bottom: none;
+}
+
+.journey-item strong {
+  color: #69dcff;
+  min-width: 55px;
+}
+
+.journey-item h3 {
+  margin: 0 0 6px;
+}
+
+.journey-item p {
+  margin: 0;
+  color: #b8c6d2;
+  line-height: 1.5;
+}
+
+
+
+.about-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  background: rgba(3, 12, 24, 0.88);
+  border-top: 2px solid #69dcff;
+  padding: 28px 30px;
+  margin-top: 20px;
+}
+
+.about-contact span {
+  color: #69dcff;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.about-contact h2 {
+  margin: 8px 0 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.contact-info {
+  color: #c5d1dc;
+  text-align: right;
+}
+
+
+.about-loading {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #050b15;
+  color: #69dcff;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .about-page {
+    background-attachment: scroll;
+  }
+
+  .about-page .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 18px 20px;
+  }
+
+  .about-page .navlinks {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-page .navlinks a {
+    font-size: 12px;
+  }
+
+  .about-content {
+    padding: 50px 20px;
+  }
+
+  .about-hero h1 {
+    font-size: 38px;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .about-contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-info {
+    text-align: left;
+  }
+
+  .journey-item {
+    gap: 15px;
+  }
+}

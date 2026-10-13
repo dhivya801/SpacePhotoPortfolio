@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+.accordion-page {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+}
+.accordion-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 7, 15, 0.48);
+}
+.accordion-page .navbar {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  padding: 20px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(3, 10, 20, 0.72);
+  border-bottom: 1px solid rgba(105, 220, 255, 0.25);
+}
+.navbar h2 {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.navlinks {
+  display: flex;
+  gap: 22px;
+}
+.navlinks a {
+  color: #dce7ef;
+  text-decoration: none;
+  font-size: 14px;
+}
+.navlinks a:hover {
+  color: #69dcff;
+}
+.accordion-content {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding: 70px 0;
+}
+.accordion-head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.accordion-head span {
+  color: #69dcff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.accordion-head h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 48px;
+  margin: 12px 0;
+}
+.accordion-head p {
+  max-width: 600px;
+  margin: auto;
+  color: #d0d9e1;
+  line-height: 1.6;
+}
+
+.accordion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.accordion-item {
+  background: rgba(5, 14, 27, 0.82);
+  border: 1px solid rgba(105, 220, 255, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.accordion-item.open {
+  border-color: #69dcff;
+}
+.accordion-question {
+  width: 100%;
+  padding: 20px 22px;
+  border: none;
+  background: transparent;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+.accordion-question:hover {
+  color: #69dcff;
+}
+.accordion-question b {
+  color: #69dcff;
+  font-size: 24px;
+  font-weight: 400;
+}
+.accordion-answer {
+  padding: 0 22px 20px;
+}
+.accordion-answer p {
+  margin: 0;
+  color: #bcc9d4;
+  line-height: 1.7;
+  font-size: 14px;
+}
+.accordion-loading {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #050b15;
+  color: #69dcff;
+}
+@media (max-width: 768px) {
+
+  .accordion-page {
+    background-attachment: scroll;
+  }
+
+  .accordion-page .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 18px 20px;
+  }
+
+  .navlinks {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navlinks a {
+    font-size: 12px;
+  }
+
+  .accordion-content {
+    padding: 50px 0;
+  }
+
+  .accordion-head h1 {
+    font-size: 35px;
+  }
+
+  .accordion-question {
+    padding: 17px;
+    font-size: 14px;
+  }
+}

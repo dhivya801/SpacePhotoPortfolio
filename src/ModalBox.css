@@ -1,0 +1,74 @@
+.modal{
+    display:relative;
+    width:30%;
+    height:30%;
+    font-size:18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    margin-left:270px;
+    margin-top:20px;
+    border:1px solid rgb(26, 9, 88);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    padding-top:7%;
+    background: rgb(175, 175, 255);
+    position:absolute;
+
+}
+.ok{
+    background-color: beige;
+    border:2px solid black;
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    font-weight: 700;
+
+}
+.confirm{
+     background-color: rgb(64, 147, 185);
+    border:2px solid black;
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+     font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color:aliceblue;
+    margin-left:330px;
+    margin-top:25px;
+}
+.box{
+    font-size: 18px;
+    text-align: center;
+    margin-top:20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+.xButton{
+    border:none;
+    background-color: white;
+    color:black;
+    position:absolute;
+    width:3%;
+    margin-left:35%;
+    margin-top:3%;
+    font-size:20px;
+}
+.overlay{
+    min-height: 100vh;
+    background: #151321;
+    width:100%
+}
+.popup{
+    background-color: white;
+    width:40%;
+    height:30%;
+    margin-left: 30%;
+    
+}
+.img{
+    margin: 60px;
+}
